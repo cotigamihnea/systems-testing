@@ -1,5 +1,5 @@
 from node import Node
-
+# mica modificare: acest comentariu
 class Tree:
     """ Tree class for binary tree """
 
