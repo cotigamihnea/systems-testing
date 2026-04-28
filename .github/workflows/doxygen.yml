@@ -12,7 +12,11 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4   # <-- Schimbat aici
+
+    # ... (restul rămâne la fel) ...
+
+    
 
     - name: Install Doxygen
       run: |
@@ -25,8 +29,9 @@ jobs:
       run: doxygen Doxyfile
 
     - name: Upload Documentation Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4   # <-- Schimbat aici
       with:
         name: doxygen-html
-        # Calea către folderul generat de doxygen
-        path: laboratories/cicd-documentation/html/
+        path: laboratories/cicd-documentation/html/3
+
+        
