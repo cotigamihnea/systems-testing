@@ -32,6 +32,6 @@ jobs:
       uses: actions/upload-artifact@v4   # <-- Schimbat aici
       with:
         name: doxygen-html
-        path: laboratories/cicd-documentation/html/3
+        path: laboratories/cicd-documentation/html/
 
         
